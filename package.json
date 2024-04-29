@@ -9,6 +9,9 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "js-sha256": "^0.11.0"
+    "js-sha256": "^0.11.0",
+    "jshash": "^0.0.1",
+    "jshashes": "^1.0.8",
+    "socket.io": "^4.7.5"
   }
 }
