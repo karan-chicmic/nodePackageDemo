@@ -8,9 +8,6 @@ export class shaScript extends Component {
     @property({ type: Label })
     label: Label = null;
     start() {
-        var hashString = new hash.SHA256().hex("Karan Kalra");
-        console.log(hashString);
-
         // var SHA256 = new Hashes.SHA256();
         // console.log(SHA256.hex("Karan Kalra"));
     }
@@ -23,5 +20,9 @@ export class shaScript extends Component {
         // // hash.update("Message to hash");
         // hash.update(this.label.string);
         // this.label.string = hash.hex();
+
+        var hashObj = new hash.SHA256();
+        var hashValue = hashObj.hex(this.label.string);
+        this.label.string = hashValue;
     }
 }
